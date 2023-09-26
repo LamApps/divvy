@@ -1,0 +1,11 @@
+{
+  "arrowParens": "avoid",
+  "singleQuote": true,
+  "trailingComma": "all",
+  "overrides": [
+    {
+      "files": "*.json",
+      "options": { "printWidth": 500 }
+    }
+  ]
+}

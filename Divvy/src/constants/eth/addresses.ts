@@ -1,0 +1,2 @@
+export const HPSCaddress = "0xc2aF4bd2C7Ee0bE5e8530D5841e72C1e74C86Ae3"
+export const USDCSCaddress = "0xD92E713d051C37EbB2561803a3b5FBAbc4962431"

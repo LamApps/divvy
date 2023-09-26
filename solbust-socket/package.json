@@ -1,0 +1,29 @@
+{
+  "name": "solbust-socket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.16.1",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3"
+  },
+  "dependencies": {
+    "@solana/spl-token-registry": "^0.2.247",
+    "@solana/web3.js": "^1.27.0",
+    "@switchboard-xyz/switchboard-api": "^0.2.150",
+    "buffer-layout": "^1.2.2",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "keccak256": "^1.0.3",
+    "mysql2": "^2.3.0",
+    "redis": "^3.1.2",
+    "socket.io": "^4.2.0",
+    "ts-node": "^10.2.1"
+  }
+}

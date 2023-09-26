@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="170px" height="35px" viewBox="0 0 170 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57 (83077) - https://sketch.com -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M22.3095522,0.396639535 L0,0.396639535 L0,33.2676628 L22.3095522,33.2676628 C22.3095522,33.2676628 28.7933435,24.9675349 32.2795957,20.1641512 C33.7259087,18.1713488 33.7259087,15.4929535 32.2795957,13.5001512 C28.7933435,8.69676744 22.3095522,0.396639535 22.3095522,0.396639535 Z" id="path-1"></path>
+        <radialGradient cx="-24.5310535%" cy="114.870098%" fx="-24.5310535%" fy="114.870098%" r="151.266571%" gradientTransform="translate(-0.245311,1.148701),scale(0.985215,1.000000),rotate(-41.678075),scale(1.000000,0.863433),translate(0.245311,-1.148701)" id="radialGradient-3">
+            <stop stop-color="#7C01FF" offset="0%"></stop>
+            <stop stop-color="#00D77D" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Proof-of-Concept-Version" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Betting---Logged-Out" transform="translate(-25.000000, -27.000000)">
+            <g id="Group-4" transform="translate(25.000000, 26.000000)">
+                <g id="Group-11">
+                    <g id="Group-10" transform="translate(0.000000, 0.664062)">
+                        <g id="Group-3" transform="translate(0.000000, 0.417314)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Clip-2"></g>
+                            <path d="M22.3095522,0.396639535 L0,0.396639535 L0,33.2676628 L22.3095522,33.2676628 C22.3095522,33.2676628 28.7933435,24.9675349 32.2795957,20.1641512 C33.7259087,18.1713488 33.7259087,15.4929535 32.2795957,13.5001512 C28.7933435,8.69676744 22.3095522,0.396639535 22.3095522,0.396639535 Z" id="Fill-1" fill="url(#radialGradient-3)" mask="url(#mask-2)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

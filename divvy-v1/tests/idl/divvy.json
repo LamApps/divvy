@@ -1,0 +1,243 @@
+{
+  "version": "0.0.0",
+  "name": "divvy",
+  "instructions": [
+    {
+      "name": "initialize",
+      "accounts": [
+        {
+          "name": "ownerAccount",
+          "isMut": false,
+          "isSigner": true
+        },
+        {
+          "name": "betUsdcAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "moonShotAccount",
+          "isMut": true,
+          "isSigner": false
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "initMoonShot",
+      "accounts": [
+        {
+          "name": "ownerAccount",
+          "isMut": false,
+          "isSigner": true
+        },
+        {
+          "name": "moonShotAccount",
+          "isMut": false,
+          "isSigner": true
+        },
+        {
+          "name": "currentMultiplierAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "previousMultiplierAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "multiplier",
+          "type": "u32"
+        }
+      ]
+    },
+    {
+      "name": "initShotBet",
+      "accounts": [
+        {
+          "name": "moonShotAccount",
+          "isMut": false,
+          "isSigner": true
+        },
+        {
+          "name": "moonShotBetAccount",
+          "isMut": false,
+          "isSigner": true
+        },
+        {
+          "name": "userAccount",
+          "isMut": false,
+          "isSigner": true
+        },
+        {
+          "name": "userUsdtAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "betUsdtAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "multiplierAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "risk",
+          "type": "u16"
+        },
+        {
+          "name": "multiplier",
+          "type": "u32"
+        }
+      ]
+    },
+    {
+      "name": "settleShotBet",
+      "accounts": [
+        {
+          "name": "moonShotBetAccount",
+          "isMut": false,
+          "isSigner": true
+        },
+        {
+          "name": "userAccount",
+          "isMut": false,
+          "isSigner": true
+        },
+        {
+          "name": "userUsdtAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "betUsdtAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "multiplierAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "pdaAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": []
+    }
+  ],
+  "accounts": [
+    {
+      "name": "MoonShot",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "currentPubkey",
+            "type": "publicKey"
+          },
+          {
+            "name": "previousPubkey",
+            "type": "publicKey"
+          },
+          {
+            "name": "currentMultiplier",
+            "type": "u32"
+          },
+          {
+            "name": "previousMultiplier",
+            "type": "u32"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Multiplier",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "multiplier",
+            "type": "u32"
+          },
+          {
+            "name": "counter",
+            "type": "u64"
+          },
+          {
+            "name": "busted",
+            "type": "bool"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MoonShootBet",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "userMainPubkey",
+            "type": "publicKey"
+          },
+          {
+            "name": "userUsdtPubkey",
+            "type": "publicKey"
+          },
+          {
+            "name": "risk",
+            "type": "u16"
+          },
+          {
+            "name": "userMultiplier",
+            "type": "u32"
+          },
+          {
+            "name": "actualMultiplierPubkey",
+            "type": "publicKey"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "code": 300,
+      "name": "ArithmeticError",
+      "msg": "failed to perform some math operation safely"
+    },
+    {
+      "code": 301,
+      "name": "InvalidMoonShotPayout",
+      "msg": "There was an error calculating your moonshot payout"
+    }
+  ],
+  "metadata": {
+    "address": "J3694SWb8H47QkbqmMGDrSpccZFQiBuryHKjrYU42Ree"
+  }
+}
